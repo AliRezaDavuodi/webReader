@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 10px === 1rem
+}
+
+body {
+  @include fullFlex(center);
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  background-color: rgba($colorPrimary, 0.7);
+  height: 100vh;
+}
+
+#app-container {
+  @include fullFlex(space-between);
+  height: 95vh;
+  width: 80%;
+  background-color: $colorPrimary;
+}
+
+.container {
+  height: 100%;
+  background-color: #fff;
+  flex: 1;
+  border: 1px solid red;
+}
+
+#section--2 {
+  flex: 2;
+}
