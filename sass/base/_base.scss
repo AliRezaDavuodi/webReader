@@ -72,6 +72,7 @@ ul {
     &__img {
       position: relative;
       width: 70%;
+      pointer-events: none;
 
       &-hero {
         height: 30rem;

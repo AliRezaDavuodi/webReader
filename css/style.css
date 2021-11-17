@@ -70,7 +70,8 @@ ul {
       color: #fff; }
     .content .hero__img {
       position: relative;
-      width: 70%; }
+      width: 70%;
+      pointer-events: none; }
       .content .hero__img-hero {
         height: 30rem;
         margin-top: 1rem;
@@ -122,7 +123,8 @@ ul {
     transform: translateY(-0.5rem); }
 
 .form {
-  display: flex; }
+  display: flex;
+  z-index: 5; }
   .form__group {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
@@ -152,14 +154,14 @@ ul {
     outline: 0;
     background-color: transparent;
     padding: 1rem;
-    text-align: center;
+    padding-left: 5rem;
     color: #fff; }
     .form__input::placeholder {
       opacity: 0; }
   .form__input:placeholder-shown + .form__label {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 5rem;
+    transform: translateY(-50%);
     font-size: 1.8rem; }
   .form__label {
     position: absolute;
@@ -169,7 +171,8 @@ ul {
     font-size: 1.3rem;
     transition: all 0.2s;
     color: #fff;
-    font-family: "Source Sans Pro", sans-serif; }
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500; }
 
 .aside {
   height: 100%;

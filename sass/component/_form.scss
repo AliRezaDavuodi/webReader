@@ -1,5 +1,6 @@
 .form {
   display: flex;
+  z-index: 5;
 
   &__group {
     width: 100%;
@@ -35,7 +36,7 @@
     outline: 0;
     background-color: transparent;
     padding: 1rem;
-    text-align: center;
+    padding-left: 5rem;
     color: $colorWhite;
 
     &::placeholder {
@@ -45,8 +46,8 @@
 
   &__input:placeholder-shown + &__label {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 5rem;
+    transform: translateY(-50%);
     font-size: 1.8rem;
   }
   &__label {
@@ -58,5 +59,6 @@
     transition: all 0.2s;
     color: $colorWhite;
     font-family: $fontMerrant;
+    font-weight: 500;
   }
 }
