@@ -42,35 +42,16 @@ ul {
   list-style: none;
 }
 
-.container {
-  padding: 5rem 0;
-  height: 100%;
-}
-
 #section--1 {
   @include fullFlex(space-between);
-  flex: 5;
 }
 
 .content {
   height: 100%;
   width: 100%;
-  flex: 3;
-}
-
-.btn {
-  transition: all 0.3s;
-  &__primary {
-    margin-top: 2rem;
-    padding: 0.5rem 4rem;
-    border-radius: 3rem;
-    background-color: $colorTertiary;
-    color: $colorWhite;
-    font-size: 2rem;
-    text-transform: capitalize;
-  }
-
-  &:hover {
-    transform: translateY(-0.5rem);
-  }
+  flex: 2;
+  align-self: flex-start;
+  background-color: $colorSecondary;
+  padding: 5rem 0;
+  border-radius: 5rem 0 0 0;
 }
