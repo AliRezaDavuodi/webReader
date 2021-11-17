@@ -16,12 +16,14 @@ body {
   font-size: 1.8rem;
   line-height: 1.7;
   background-color: rgba($colorPrimary, 0.7);
-  height: 100vh;
+  min-height: 100vh;
+  padding: 5rem 0;
 }
 
 #app-container {
   @include fullFlex(space-between);
-  height: 95vh;
+  align-items: flex-start;
+  min-width: 95vh;
   width: 80%;
   background-color: $colorPrimary;
   border-radius: 1rem;
@@ -33,17 +35,15 @@ a,
 a::after,
 a::before {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
   list-style: none;
 }
 
-section {
-  border: 1px solid red;
-}
 .container {
-  padding: 5rem;
+  padding: 5rem 0;
   height: 100%;
 }
 
@@ -55,11 +55,22 @@ section {
 .content {
   height: 100%;
   width: 100%;
-  flex: 2;
+  flex: 3;
 }
 
-.aside {
-  height: 100%;
-  width: 100%;
-  flex: 1;
+.btn {
+  transition: all 0.3s;
+  &__primary {
+    margin-top: 2rem;
+    padding: 0.5rem 4rem;
+    border-radius: 3rem;
+    background-color: $colorTertiary;
+    color: $colorWhite;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
 }

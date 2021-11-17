@@ -1,0 +1,30 @@
+.heading {
+  font-family: $fontCabin;
+  letter-spacing: 2px;
+
+  &-1 {
+  }
+  &-2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  &-3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  &-4 {
+  }
+  &-5 {
+  }
+
+  &-rank {
+    font-weight: 700;
+  }
+}
+
+.paragraph {
+  font-family: $fontCabin;
+  font-size: 1.4rem;
+  text-align: justify;
+}

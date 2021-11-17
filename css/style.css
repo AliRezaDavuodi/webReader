@@ -18,13 +18,15 @@ body {
   font-size: 1.8rem;
   line-height: 1.7;
   background-color: rgba(28, 33, 62, 0.7);
-  height: 100vh; }
+  min-height: 100vh;
+  padding: 5rem 0; }
 
 #app-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 95vh;
+  align-items: flex-start;
+  min-width: 95vh;
   width: 80%;
   background-color: #1c213e;
   border-radius: 1rem;
@@ -34,16 +36,14 @@ body {
 a,
 a::after,
 a::before {
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block; }
 
 ul {
   list-style: none; }
 
-section {
-  border: 1px solid red; }
-
 .container {
-  padding: 5rem;
+  padding: 5rem 0;
   height: 100%; }
 
 #section--1 {
@@ -55,12 +55,111 @@ section {
 .content {
   height: 100%;
   width: 100%;
-  flex: 2; }
+  flex: 3; }
+
+.btn {
+  transition: all 0.3s; }
+  .btn__primary {
+    margin-top: 2rem;
+    padding: 0.5rem 4rem;
+    border-radius: 3rem;
+    background-color: #9098d8;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize; }
+  .btn:hover {
+    transform: translateY(-0.5rem); }
+
+.heading {
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 2px; }
+  .heading-2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize; }
+  .heading-3 {
+    font-size: 1.6rem;
+    font-weight: 400; }
+  .heading-rank {
+    font-weight: 700; }
+
+.paragraph {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.4rem;
+  text-align: justify; }
 
 .aside {
   height: 100%;
   width: 100%;
-  flex: 1; }
+  flex: 2;
+  position: relative; }
+  .aside .notif {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: -3rem;
+    right: 5rem;
+    width: 100%; }
+    .aside .notif svg {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 2rem;
+      fill: #fff;
+      cursor: pointer; }
+    .aside .notif img {
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem; }
+  .aside .profile {
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+    .aside .profile img {
+      width: 10rem;
+      height: 10rem; }
+    .aside .profile .cup {
+      margin: 2rem 0; }
+    .aside .profile .user {
+      border-radius: 50%; }
+  .aside .items {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+    .aside .items__row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 3rem 1rem; }
+    .aside .items__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2rem;
+      width: 8rem;
+      height: 8rem;
+      background-color: #2b335b;
+      border-radius: 2rem; }
+      .aside .items__icon svg {
+        width: 3rem;
+        height: 3rem;
+        fill: #9098d8; }
+    .aside .items__detail {
+      font-size: 1.5rem;
+      font-family: "Cabin", sans-serif;
+      color: #fff; }
+      .aside .items__detail--count {
+        color: rgba(255, 255, 255, 0.4); }
+  .aside .help__us {
+    padding: 3rem 1rem;
+    color: #fff;
+    padding: 3rem 2rem; }
+    .aside .help__us--content {
+      background-color: #2b335b;
+      border-radius: 2rem;
+      padding: 1rem; }
+    .aside .help__us--heading {
+      font-size: 4rem; }
 
 .navbar {
   width: 100%;
