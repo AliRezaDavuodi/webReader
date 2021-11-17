@@ -24,15 +24,42 @@ body {
   height: 95vh;
   width: 80%;
   background-color: $colorPrimary;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba($colorBlack, 0.4);
+  overflow: hidden;
 }
 
-.container {
-  height: 100%;
-  background-color: #fff;
-  flex: 1;
+a,
+a::after,
+a::before {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
   border: 1px solid red;
 }
+.container {
+  padding: 5rem;
+  height: 100%;
+}
 
-#section--2 {
+#section--1 {
+  @include fullFlex(space-between);
+  flex: 5;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
   flex: 2;
+}
+
+.aside {
+  height: 100%;
+  width: 100%;
+  flex: 1;
 }

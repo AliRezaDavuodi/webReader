@@ -26,13 +26,90 @@ body {
   justify-content: space-between;
   height: 95vh;
   width: 80%;
-  background-color: #1c213e; }
+  background-color: #1c213e;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  overflow: hidden; }
 
-.container {
-  height: 100%;
-  background-color: #fff;
-  flex: 1;
+a,
+a::after,
+a::before {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+section {
   border: 1px solid red; }
 
-#section--2 {
+.container {
+  padding: 5rem;
+  height: 100%; }
+
+#section--1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 5; }
+
+.content {
+  height: 100%;
+  width: 100%;
   flex: 2; }
+
+.aside {
+  height: 100%;
+  width: 100%;
+  flex: 1; }
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  padding: 5rem; }
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem; }
+  .navbar__item {
+    width: 100%;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1; }
+    .navbar__item:not(:last-child) {
+      margin-bottom: 2rem; }
+    .navbar__item::after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 100%;
+      top: 0;
+      left: -30%;
+      /* Review: */
+      background-color: #f00;
+      border-radius: 0.5rem;
+      z-index: -1;
+      transform: scaleY(0);
+      transition: transform 0.3s cubic-bezier(0.66, -0.05, 0.31, 1.05), width 0.5s 0.2s cubic-bezier(0.66, -0.05, 0.31, 1.05), left 0.5s 0.2s cubic-bezier(0.66, -0.05, 0.31, 1.05); }
+    .navbar__item:hover::after {
+      transform: scaleY(1);
+      width: 135%; }
+    .navbar__item:hover .navbar__link {
+      color: #000; }
+      .navbar__item:hover .navbar__link svg {
+        fill: #000; }
+  .navbar__link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: all 0.3s 0.3s; }
+    .navbar__link svg {
+      margin-right: 1.5rem;
+      height: 2rem;
+      width: 2rem;
+      fill: #fff;
+      transition: all 0.3s 0.3s; }
