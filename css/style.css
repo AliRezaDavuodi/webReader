@@ -18,18 +18,16 @@ body {
   font-size: 1.8rem;
   line-height: 1.7;
   background-color: rgba(28, 33, 62, 0.7);
-  min-height: 100vh;
-  padding: 5rem 0; }
+  min-height: 100vh; }
 
 #app-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
-  min-height: 95vh;
-  width: 90%;
+  min-height: 100vh;
+  width: 100%;
   background-color: #1c213e;
-  border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   overflow: hidden; }
 
@@ -80,6 +78,77 @@ ul {
         position: absolute;
         top: 20%;
         left: 5%; }
+  .content .recomend {
+    padding: 3rem 0rem; }
+    .content .recomend__heading {
+      color: rgba(255, 255, 255, 0.5); }
+    .content .recomend__content {
+      display: flex;
+      align-items: center;
+      color: #fff; }
+      .content .recomend__content span {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.3); }
+    .content .recomend__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      margin: 0 1rem; }
+      .content .recomend__item-1 {
+        width: 65%; }
+      .content .recomend__item-2 {
+        width: 35%; }
+      .content .recomend__item--img {
+        width: 50%; }
+        .content .recomend__item--img img {
+          object-fit: cover; }
+      .content .recomend__item--rank {
+        display: flex;
+        align-items: center;
+        margin: 1.2rem 0; }
+        .content .recomend__item--rank svg {
+          width: 1.6rem;
+          height: 1.6rem;
+          fill: #ffc107; }
+        .content .recomend__item--rank span {
+          margin-left: 0.7rem;
+          color: #fff; }
+    .content .recomend__info {
+      font-size: 1.6rem;
+      padding-left: 5rem;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600; }
+      .content .recomend__info a {
+        transition: all 0.3s;
+        color: #a2a5bf; }
+        .content .recomend__info a:not(:last-child) {
+          margin-right: 1.5rem; }
+        .content .recomend__info a:hover {
+          color: #fff; }
+    .content .recomend__years {
+      padding-left: 5rem;
+      padding-top: 5rem; }
+      .content .recomend__years a {
+        font-size: 1.3rem;
+        font-family: "Cabin", sans-serif;
+        color: #fff;
+        position: relative; }
+        .content .recomend__years a:not(:last-child) {
+          margin-right: 1.2rem; }
+        .content .recomend__years a::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: -100%;
+          opacity: 0;
+          background-color: #f00;
+          transition: all 0.3s; }
+        .content .recomend__years a:hover::after {
+          opacity: 1;
+          left: 0; }
 
 .heading {
   font-family: "Cabin", sans-serif;
@@ -93,6 +162,8 @@ ul {
   .heading-3 {
     font-size: 1.6rem;
     font-weight: 400; }
+  .heading-4 {
+    font-size: 1.6rem; }
   .heading-rank {
     font-weight: 700; }
 
@@ -100,6 +171,12 @@ ul {
   font-family: "Cabin", sans-serif;
   font-size: 1.4rem;
   text-align: justify; }
+  .paragraph-sm {
+    font-size: 1.1rem;
+    text-align: left; }
+
+span {
+  font-family: "Cabin", sans-serif; }
 
 .btn {
   transition: all 0.3s;
@@ -166,8 +243,8 @@ ul {
   .form__label {
     position: absolute;
     top: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 5rem;
+    transform: translateY(-50%);
     font-size: 1.3rem;
     transition: all 0.2s;
     color: #fff;
@@ -179,7 +256,8 @@ ul {
   width: 100%;
   flex: 1;
   position: relative;
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  align-self: flex-start; }
   .aside .notif {
     display: flex;
     align-items: center;
@@ -273,7 +351,7 @@ ul {
       width: 2rem;
       height: 100%;
       top: 0;
-      left: -30%;
+      left: -10%;
       /* Review: */
       background-color: #f00;
       border-radius: 0.5rem;
@@ -282,7 +360,7 @@ ul {
       transition: transform 0.3s cubic-bezier(0.66, -0.05, 0.31, 1.05), width 0.5s 0.2s cubic-bezier(0.66, -0.05, 0.31, 1.05), left 0.5s 0.2s cubic-bezier(0.66, -0.05, 0.31, 1.05); }
     .navbar__item:hover::after {
       transform: scaleY(1);
-      width: 135%; }
+      width: 105%; }
     .navbar__item:hover .navbar__link {
       color: #000; }
       .navbar__item:hover .navbar__link svg {

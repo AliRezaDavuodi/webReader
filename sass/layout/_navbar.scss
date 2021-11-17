@@ -26,7 +26,7 @@
       width: 2rem;
       height: 100%;
       top: 0;
-      left: -30%;
+      left: -10%;
       /* Review: */
       background-color: #f00;
       border-radius: 0.5rem;
@@ -39,7 +39,7 @@
 
     &:hover::after {
       transform: scaleY(1);
-      width: 135%;
+      width: 105%;
     }
     &:hover .navbar__link {
       color: $colorBlack;

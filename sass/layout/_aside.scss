@@ -4,7 +4,7 @@
   flex: 1;
   position: relative;
   padding: 5rem 0;
-
+  align-self: flex-start;
   .notif {
     @include fullFlex(flex-end);
     position: absolute;

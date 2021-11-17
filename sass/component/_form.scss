@@ -53,8 +53,8 @@
   &__label {
     position: absolute;
     top: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 5rem;
+    transform: translateY(-50%);
     font-size: 1.3rem;
     transition: all 0.2s;
     color: $colorWhite;
