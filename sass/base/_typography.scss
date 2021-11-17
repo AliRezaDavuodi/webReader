@@ -16,8 +16,16 @@
   }
   &-4 {
     font-size: 1.6rem;
+
+    &-sm {
+      font-size: 1.3rem;
+      color: red;
+    }
   }
   &-5 {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    font-weight: 400;
   }
 
   &-rank {
@@ -30,9 +38,16 @@
   font-size: 1.4rem;
   text-align: justify;
 
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
+
   &-sm {
     font-size: 1.1rem;
     text-align: left;
+    @media only screen and (max-width: 375px) {
+      text-align: center;
+    }
   }
 }
 

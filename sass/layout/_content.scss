@@ -1,0 +1,71 @@
+.content {
+  width: 18rem;
+  height: 100%;
+  flex: 2;
+  align-self: flex-start;
+  background-color: $colorSecondary;
+  padding: 5rem;
+  border-radius: 5rem 0 0 0;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 375px) {
+    border-radius: 0;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .hero {
+    @include fullFlex(space-between);
+    background-color: rgba($colorWhite, 0.1);
+    padding: 0 2rem;
+    border-radius: 1rem;
+    box-sizing: 0 1rem 2rem rgba($colorBlack, 0.3);
+    margin-top: 5rem;
+    height: 20rem;
+
+    @media only screen and (max-width: 375px) {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    &__content {
+      width: 30%;
+      color: $colorWhite;
+
+      @media only screen and (max-width: 375px) {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      position: relative;
+      width: 70%;
+      pointer-events: none;
+      text-align: center;
+
+      @media only screen and (max-width: 375px) {
+        width: 100%;
+      }
+
+      &-hero {
+        height: 30rem;
+        margin-top: 1rem;
+        transform: scale(1.2);
+        @media only screen and (max-width: 375px) {
+          width: 100%;
+          transform: scale(1);
+        }
+      }
+      &-cloud {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+      }
+    }
+  }
+}

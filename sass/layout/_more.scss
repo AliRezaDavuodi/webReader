@@ -1,0 +1,37 @@
+.more {
+  @include flex;
+  padding: 5rem 0;
+  color: $colorWhite;
+
+  @media only screen and (max-width: 375px) {
+    flex-direction: column;
+  }
+
+  &__content {
+    span {
+      font-size: 1.1rem;
+      color: rgba($colorWhite, 0.3);
+    }
+  }
+  &__item {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      width: 22rem;
+    }
+    @media only screen and (max-width: 375px) {
+      width: 100%;
+      justify-content: space-around;
+      margin: 1rem 0;
+    }
+  }
+  &__img {
+    width: 8rem;
+    margin-right: 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}

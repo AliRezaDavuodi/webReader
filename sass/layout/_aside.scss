@@ -33,6 +33,10 @@
     position: relative;
     border-bottom: 2px solid rgba($colorWhite, 0.2);
 
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+
     img {
       width: 10rem;
       height: 10rem;
@@ -50,9 +54,23 @@
   .items {
     border-bottom: 2px solid rgba($colorWhite, 0.2);
 
+    @media only screen and (max-width: 768px) {
+      @include fullFlex(space-around);
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 375px) {
+      flex-direction: column;
+    }
+
     &__row {
       @include fullFlex(flex-start);
       padding: 3rem 1rem;
+      padding-left: 3rem;
+
+      @media only screen and (max-width: 375px) {
+        width: 100%;
+      }
     }
     &__icon {
       @include fullFlex(center);
@@ -73,11 +91,15 @@
       font-family: $fontCabin;
       color: $colorWhite;
       &--name {
+        svg {
+          width: 2rem;
+          height: 2rem;
+          fill: $colorYellow;
+          margin-right: 0.5rem;
+        }
       }
       &--count {
         color: rgba($colorWhite, 0.4);
-      }
-      &--priacy {
       }
     }
   }
@@ -86,10 +108,19 @@
     color: $colorWhite;
     padding: 3rem 2rem;
 
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+
     &--content {
       background-color: $colorSecondary;
       border-radius: 2rem;
       padding: 1rem;
+
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        padding: 2rem 5rem;
+      }
     }
 
     &--heading {

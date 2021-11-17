@@ -8,6 +8,10 @@
 
 html {
   font-size: 62.5%; // 10px === 1rem
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -27,6 +31,10 @@ body {
   background-color: $colorPrimary;
   box-shadow: 0 1rem 2rem rgba($colorBlack, 0.4);
   overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 a,
@@ -42,146 +50,8 @@ ul {
 
 #section--1 {
   @include fullFlex(space-between);
-}
 
-.content {
-  height: 100%;
-  width: 100%;
-  flex: 2;
-  align-self: flex-start;
-  background-color: $colorSecondary;
-  padding: 5rem;
-  border-radius: 5rem 0 0 0;
-
-  .hero {
-    @include fullFlex(space-between);
-    background-color: rgba($colorWhite, 0.1);
-    padding: 0 2rem;
-    border-radius: 1rem;
-    box-sizing: 0 1rem 2rem rgba($colorBlack, 0.3);
-    margin-top: 5rem;
-    height: 20rem;
-
-    &__content {
-      width: 30%;
-      color: $colorWhite;
-    }
-
-    &__img {
-      position: relative;
-      width: 70%;
-      pointer-events: none;
-
-      &-hero {
-        height: 30rem;
-        margin-top: 1rem;
-        transform: scale(1.2);
-      }
-      &-cloud {
-        position: absolute;
-        top: 20%;
-        left: 5%;
-      }
-    }
-  }
-
-  .recomend {
-    padding: 3rem 0rem;
-
-    &__heading {
-      color: rgba($colorWhite, 0.5);
-    }
-
-    &__content {
-      @include flex;
-      color: $colorWhite;
-      span {
-        font-size: 1.1rem;
-        color: rgba($colorWhite, 0.3);
-      }
-    }
-    &__item {
-      @include flex;
-      justify-content: space-between;
-      padding: 0 1rem;
-      margin: 0 1rem;
-
-      &-1 {
-        width: 65%;
-      }
-      &-2 {
-        width: 35%;
-      }
-      &--img {
-        width: 50%;
-
-        img {
-          object-fit: cover;
-        }
-      }
-      &--content {
-      }
-      &--rank {
-        @include flex;
-        margin: 1.2rem 0;
-        svg {
-          width: 1.6rem;
-          height: 1.6rem;
-          fill: #ffc107;
-        }
-
-        span {
-          margin-left: 0.7rem;
-          color: $colorWhite;
-        }
-      }
-    }
-    &__info {
-      font-size: 1.6rem;
-      padding-left: 5rem;
-      font-family: $fontMerrant;
-      font-weight: 600;
-      a {
-        transition: all 0.3s;
-        color: #a2a5bf;
-        &:not(:last-child) {
-          margin-right: 1.5rem;
-        }
-        &:hover {
-          color: $colorWhite;
-        }
-      }
-    }
-
-    &__years {
-      padding-left: 5rem;
-      padding-top: 5rem;
-      a {
-        font-size: 1.3rem;
-        font-family: $fontCabin;
-        color: $colorWhite;
-        position: relative;
-        &:not(:last-child) {
-          margin-right: 1.2rem;
-        }
-
-        &::after {
-          content: "";
-          width: 100%;
-          height: 2px;
-          position: absolute;
-          bottom: 0;
-          left: -100%;
-          opacity: 0;
-          background-color: #f00;
-          transition: all 0.3s;
-        }
-
-        &:hover::after {
-          opacity: 1;
-          left: 0;
-        }
-      }
-    }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
   }
 }
