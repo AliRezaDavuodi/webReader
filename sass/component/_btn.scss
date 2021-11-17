@@ -1,14 +1,23 @@
 .btn {
   transition: all 0.3s;
+  margin-top: 1.9rem;
+  text-transform: capitalize;
+  font-family: $fontMerrant;
   &__primary {
-    margin-top: 1.9rem;
-    letter-spacing: 3px;
     padding: 0.5rem 4rem;
     border-radius: 3rem;
     background-color: $colorTertiary;
     color: $colorWhite;
     font-size: 2rem;
-    text-transform: capitalize;
+    letter-spacing: 3px;
+  }
+
+  &__secondary {
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    background-color: rgba($colorBlack, 0.5);
+    color: $colorWhite;
+    font-size: 1.8rem;
   }
 
   &:hover {
