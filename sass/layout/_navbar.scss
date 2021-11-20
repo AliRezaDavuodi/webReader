@@ -5,12 +5,11 @@
   padding: 5rem 0;
   padding-left: 1rem;
 
-  @media only screen and (max-width: 375px) {
-    padding: 3rem 0;
-  }
-
   @media only screen and (max-width: 768px) {
     text-align: center;
+  }
+  @media only screen and (max-width: 375px) {
+    padding: 3rem 0;
   }
 
   &__list {
@@ -19,11 +18,11 @@
     width: 100%;
     margin-top: 5rem;
 
-    @media only screen and (max-width: 375px) {
-      flex-wrap: wrap;
-    }
     @media only screen and (max-width: 768px) {
       flex-direction: row;
+    }
+    @media only screen and (max-width: 600px) {
+      flex-wrap: wrap;
     }
   }
 
@@ -85,7 +84,7 @@
     font-family: $fontMerrant;
     transition: all 0.3s 0.3s;
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       @include fullFlex(space-between);
     }
 
