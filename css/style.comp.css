@@ -175,7 +175,7 @@ span {
   padding: 0 1rem;
   margin: 0 1rem;
   width: 33.33%; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 600px) {
     .item {
       width: 100% !important;
       text-align: center;
@@ -184,7 +184,7 @@ span {
     width: 65%; }
   .item-2 {
     width: 35%; }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       .item-2 {
         padding: 2rem 5rem; } }
   .item--img {
@@ -195,7 +195,7 @@ span {
     display: flex;
     align-items: center;
     margin: 1.2rem 0; }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       .item--rank {
         justify-content: center; } }
     .item--rank svg {
@@ -255,7 +255,7 @@ span {
         align-items: center;
         justify-content: space-around;
         width: 100%; } }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       .aside .items {
         flex-direction: column; } }
     .aside .items__row {
@@ -264,9 +264,12 @@ span {
       justify-content: flex-start;
       padding: 3rem 1rem;
       padding-left: 3rem; }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 600px) {
         .aside .items__row {
-          width: 100%; } }
+          width: 100%;
+          justify-content: center;
+          flex-direction: column;
+          padding: 1rem 0; } }
     .aside .items__icon {
       display: flex;
       align-items: center;
@@ -276,6 +279,9 @@ span {
       height: 8rem;
       background-color: #2b335b;
       border-radius: 2rem; }
+      @media only screen and (max-width: 600px) {
+        .aside .items__icon {
+          margin: 1rem 0; } }
       .aside .items__icon svg {
         width: 3rem;
         height: 3rem;
@@ -284,6 +290,9 @@ span {
       font-size: 1.5rem;
       font-family: "Cabin", sans-serif;
       color: #fff; }
+      @media only screen and (max-width: 600px) {
+        .aside .items__detail {
+          text-align: center; } }
       .aside .items__detail--name svg {
         width: 2rem;
         height: 2rem;
@@ -314,7 +323,7 @@ span {
   align-items: center;
   padding: 5rem 0;
   color: #fff; }
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 600px) {
     .more {
       flex-direction: column; } }
   .more__content span {
@@ -327,6 +336,10 @@ span {
     @media only screen and (max-width: 768px) {
       .more__item {
         width: 22rem; } }
+    @media only screen and (max-width: 600px) {
+      .more__item {
+        flex-direction: column;
+        margin: 2rem 0; } }
     @media only screen and (max-width: 375px) {
       .more__item {
         width: 100%;
@@ -344,24 +357,24 @@ span {
   flex: 1;
   padding: 5rem 0;
   padding-left: 1rem; }
-  @media only screen and (max-width: 375px) {
-    .navbar {
-      padding: 3rem 0; } }
   @media only screen and (max-width: 768px) {
     .navbar {
       text-align: center; } }
+  @media only screen and (max-width: 375px) {
+    .navbar {
+      padding: 3rem 0; } }
   .navbar__list {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     margin-top: 5rem; }
-    @media only screen and (max-width: 375px) {
-      .navbar__list {
-        flex-wrap: wrap; } }
     @media only screen and (max-width: 768px) {
       .navbar__list {
         flex-direction: row; } }
+    @media only screen and (max-width: 600px) {
+      .navbar__list {
+        flex-wrap: wrap; } }
   .navbar__item {
     width: 100%;
     padding: 1rem 2rem;
@@ -405,7 +418,7 @@ span {
     text-transform: capitalize;
     font-family: "Source Sans Pro", sans-serif;
     transition: all 0.3s 0.3s; }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       .navbar__link {
         display: flex;
         align-items: center;
@@ -480,14 +493,14 @@ span {
   padding: 5rem 0rem; }
   .recomend__heading {
     color: rgba(255, 255, 255, 0.5); }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       .recomend__heading {
         text-align: center; } }
   .recomend__content {
     display: flex;
     align-items: center;
     color: #fff; }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       .recomend__content {
         flex-direction: column; } }
     .recomend__content span {
